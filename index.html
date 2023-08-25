@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pizzorino</title>
     <link rel="shortcut icon" href="pizza logo.png" />
+    <link rel="stylesheet" href="style.css">
   </head>
   <header>
-    <img src="krab logo.png" alt="logo d la marque" width="90" height="80" />
+    <div class="logo">
+    <img src="krab logo.png" alt="logo d la marque" width="50" height="30" /></div>
+    <nav class="navbar">
     <a href="#">home</a>
     <a href="#">about</a>
     <a href="#">contacts us</a>
-    <a href="#">join us</a>
+    <a href="#">join us</a></nav>
   </header>
   <body>
-    <section>
+    <section class="pres">
       <h2>what is pizzarino ?</h2>
       <p>
         pizzarino is a pizza shop situated in 144 dartfish St in bikini
@@ -23,13 +26,14 @@
         beloved town,so he does everything he can as far as it makes our pizza
         have the best taste in the ocean
       </p>
-      <h5>our restaurant`s face</h5>
-      <img src="face.jpeg" alt="restaurants face" />
+      <div class="pic">
+      <h5 id="t1">our restaurant`s face</h5>
+      <img src="face.jpeg" alt="restaurants face" id="i1"/>
       <br />
-      <h5>our pizza</h5>
-      <img src="pizza.jpeg" alt="pizza`s photo" />
+      <h5 id="t2">our pizza </h5>
+      <img src="pizza.jpeg" alt="pizza`s photo" id="i2"/></div>
     </section>
-    <section>
+    <section class="pres">
       <h2>how does pizzarion work?</h2>
       <p>
         in our restaurant we try to make the best pizzas so we made our avengers
@@ -53,13 +57,15 @@
         third and last floor is a VIP floor where we host personnalities and
         great evenments
       </p>
-      <p>our staff</p>
-      <img src="staff.jpg" alt="staff pic" height="300" />
-      <p>our kitchen</p>
-      <img src="kitchen.jpeg" alt="kitchen pic" />
+      <div class="pic">
+      <h5 id="t1">our staff</h5>
+      <img src="staff.jpg" alt="staff pic" height="300" id="i1" />
+      <h5 id="t2">our kitchen</h5>
+      <img src="kitchen.jpeg" alt="kitchen pic" id="i2" /></div>
     </section>
-    <section>
-      <h2>some of our pizzas</h2>
+    <h2>some of our pizzas</h2>
+    <section class="menu">
+      <div class="recipe">
       <h3><em>margherita pizza</em></h3>
       <p>
         Everyone loves pizza, and we’re starting off this awesome list with a
@@ -90,6 +96,8 @@
             </li>
         </ol></li>
       </p>
+    </div>
+    <div class="recipe">
       <h3><em>Chicken Pesto Pizza</em></h3>
       <p>
         Try something new on your next family pizza night. Instead of a meat lover’s pizza with traditional tomato sauce, add a fresh basil pesto to season the crust. The aromatic herbs, garlic, cheese, and nuts add a gourmet flavor. Super sweet and juicy tomatoes add that missing tomato sauce element and complement the garden-inspired ingredients.
@@ -123,6 +131,10 @@ If you have leftover roasted chicken, this is a great way to use it on a new mea
             </li>
         </ol>
       </p>
+    </div>
+    </section>
+    <section class="menu1">
+    <div class="recipe">
       <h3><em>BBQ Chicken Pizza</em></h3>
       <p>
         No restaurant pizza compares to this easy homemade BBQ Chicken Pizza made with bbq sauce, mozzarella, chicken, red onions and cilantro on perfect homemade pizza crust.
@@ -146,6 +158,8 @@ If you have leftover roasted chicken, this is a great way to use it on a new mea
             </li>
         </ol></li>
       </p>
+    </div>
+    <div class="recipe">
       <h3><em>Spicy Sausage Pizza</em></h3>
       <p>
         The crust is made using my tried and true homemade crust recipe. It gets topped with loads of spicy sausage, sweet peppers, onions, chili oil, crushed red pepper, and mozzarella cheese. It just may be the best spicy pizza out there. If you are looking for something different, give this pizza a try!
@@ -178,26 +192,30 @@ If you have leftover roasted chicken, this is a great way to use it on a new mea
             </li>
         </ol></li>
       </p>
+    </div>
     </section>
-    <section>
-      <h2>contacts us</h2>
-      <p>please complete this form to contacts us</p>
+    <section class="contact">
+      <div><h2>contacts us</h2></div>
+      <div><p>please complete this form to contacts us</p></div>
       <form action="action.php" method="post">
         <label for="name">last name </label><input type="text" id="name" placeholder="write your last name here">
         <label for="prenom">first name </label><input type="text" id="prenom" placeholder="write your first name here">
-        <br>  <label for="age">entrez votre age</label><input type="number" name="quantity" id="age" required min="18" max="100" step="1" >
+        <br>  <label for="age">entrez votre age </label><input type="number" name="quantity" id="age" required min="18" max="100" step="1" placeholder="18">
        <br> <label for="phone">phone number </label><input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="write your phone number" required>
        <br><button type="submit" value="contacter">contacter</button>
       </form>
     </section>
     <footer>
+      <div class="social">
       <h4>our social media</h4>
       <p><a href="#">instagram</a>
       <br><a href="#">facebook</a>
-    </p>
-    <h5>our phone number</h5>
-    <p>0540583628</p>
-    <p>Copyright &copy; 2020</p>
+    </p></div>
+    <div class="phone">
+    <h4>our phone number</h4>
+    <p>0540583628</p></div>
+    <div class="copy">
+    <p>Copyright &copy; 2020</p></div>
     </footer>
   </body>
 </html>

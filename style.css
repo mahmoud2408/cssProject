@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "montserrat";
+  src: url(C:\Users\hp\OneDrive\Bureau\pizzorino_pizza\Montserrat.ttf);
+}
+
+header {
+  background-color: #d70f20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.navbar a {
+  position: relative;
+  color: #ff9e9e;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ff9e9e;
+  transition: 0.3s;
+}
+.navbar a:hover::before {
+  width: 100%;
+}
+
+body {
+  font-family: "montserrat";
+  background-color: #ff9e9e;
+  color: #d70f20;
+  padding-top: 50px;
+  font-size: 24pt;
+  margin: 0;
+}
+h2 {
+  text-align: center;
+  color: #601f25;
+}
+.pres {
+  padding: 10px;
+}
+.pic {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "t1 t2"
+    "i1 i2";
+  justify-items: center;
+  align-items: center;
+}
+#i1 {
+  grid-area: i1;
+}
+#i2 {
+  grid-area: i2;
+}
+#t1 {
+  grid-area: t1;
+}
+#t2 {
+  grid-area: t2;
+}
+.recipe p,
+ul,
+ol {
+  font-size: 16pt;
+}
+.recipe {
+  width: 40%;
+  border-color: rgb(138, 5, 21);
+  border-style: solid;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #feaaeb;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.menu1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+h3 {
+  text-align: center;
+}
+.contact {
+  background-color: #feddbe;
+  width: 100%;
+  padding: 5px;
+  border-radius: 30px;
+  margin-right: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  width: 700px;
+  margin-left: 375px;
+}
+input {
+  padding: 5px;
+  border-radius: 10px;
+}
+button {
+  padding: 5px;
+  margin-left: 70%;
+  background-color: orange;
+  color: #ffffff;
+}
+button:hover {
+  background-color: #d70f20;
+  cursor: pointer;
+}
+footer {
+  background-color: #601f25;
+  width: 100%;
+  padding: 10px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+footer a {
+  color: #d70f20;
+  text-decoration: none;
+}
+.social {
+  padding: 20px;
+  margin-top: 5px;
+  float: left;
+}
+.phone {
+  text-align: center;
+  margin-top: 0px;
+  float: right;
+  margin-right: 700px;
+}
+.copy {
+  margin-left: 1200px;
+}

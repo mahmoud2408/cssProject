@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../html_tree"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "pizzorino_pizza"
+	}
+}
